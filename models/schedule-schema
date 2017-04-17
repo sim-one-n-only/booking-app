@@ -1,0 +1,17 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var scheduleSchema = new Schema ({
+    title: String,
+    description: String,
+    location: String,
+    date: Date,
+    time: {
+        startTime: Number,
+        endTime: Number
+    }
+})
+
+var Schedule = mongoose.model('Schedule', scheduleSchema);
+
+module.exports = Schedule;
