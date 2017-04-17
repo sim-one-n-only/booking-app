@@ -10,11 +10,11 @@ var app = express();
 
 var port = 5000;
 
-app.use(express.static(path.join(__dirname, '')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(morgan("dev"));
 
-mongoose.connect('mongodb://localhost/scheduler', function (err) {
+mongoose.connect('mongodb://localhost/schedule', function (err) {
     if(err) throw err;
     console.log('Connected to MongoDB')
 });

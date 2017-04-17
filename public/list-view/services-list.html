@@ -1,0 +1,33 @@
+<div ng-controller="bookingServicesCntrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 servicesList">
+                <span>
+    <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Service requested" aria-describedby="basic-addon1" ng-model="newSchedule.title">
+        </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Description" aria-describedby="basic-addon2" ng-model="newSchedule.description">
+        </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Location" aria-describedby="basic-addon2" ng-model="newSchedule.location">
+        </div>
+
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" aria-label="Date (YYYY-MM-DD)" placeholder="Date(YYYY=MM-DD)" ng-model="newSchedule.date">
+            </div>
+
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" aria-label="Time" placeholder="Time" ng-model="newSchedule.date">
+            </div>
+
+            <div class="btn-lg col-xs-8 col-xs-offset-2 col-md-offset-2">
+                <button type='button' id='enterSite' class='btn btn-block' ng-click='post(newBounty)'>POST</button>
+            </div>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
