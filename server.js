@@ -19,6 +19,7 @@ mongoose.connect('mongodb://localhost/schedule', function (err) {
     console.log('Connected to MongoDB')
 });
 
+
 app.use('/schedule', scheduleRoute);
 
 app.listen(port, function () {

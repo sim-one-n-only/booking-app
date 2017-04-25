@@ -12,12 +12,12 @@ app.config(["$routeProvider", function ($routeProvider) {
         })
 
         .when("/list-view", {
-            templateUrl: "list-view/services-list.html",
+            templateUrl: "list-view/service-list.html",
             controller: "bookingServicesCntrl"
         })
 
-        .when("detail-view", {
-            templateUrl: "detail-view/calendar.html",
+        .when("/detail-view", {
+            templateUrl: "detail-view/calendar-detail-view.html",
             controller: "calendarCntrl"
         })
 

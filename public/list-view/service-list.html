@@ -1,0 +1,62 @@
+
+
+
+
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 servicesList">
+
+    <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Service requested" aria-describedby="basic-addon1"
+                   ng-model="newSchedule.title">
+        </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Description" aria-describedby="basic-addon2"
+                   ng-model="newSchedule.description">
+        </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Location" aria-describedby="basic-addon2"
+                   ng-model="newSchedule.location">
+        </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="date" class="form-control" aria-label="Date (YYYY-MM-DD)" placeholder="Date(YYYY=MM-DD)"
+                   ng-model="newSchedule.date">
+            </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="time" class="form-control" aria-label="Time" placeholder="Time" ng-model="newSchedule.time">
+            </div>
+
+            <div class="btn-lg col-xs-8 col-xs-offset-2 col-md-offset-2">
+                <button type='button' id='enterSite' class='btn btn-block' ng-click='post(newSchedule)'>POST</button>
+            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-md-4 col-xs-offset-2">
+            <div ng-repeat="booking in bookings">
+                <h3>{{booking.title}}</h3>
+                <p>Description: {{booking.description}}</p>
+                <p>Location: {{booking.location}}</p>
+                <p>Date: {{booking.date}}</p>
+                <p>Time: {{booking.time}}</h3>
+                    <button type="button" id="delete" class="btn btn-block" ng-click="delete(booking, $index)">DELETE
+                    </button>
+                    <button type="button" id="edit" class="btn btn-block" ng-model="editButton"
+                            ng-click="editBox = !editBox">EDIT
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>

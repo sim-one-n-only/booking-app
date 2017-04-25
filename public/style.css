@@ -1,0 +1,24 @@
+img {
+    width: 200px;
+}
+
+body {
+    background-color: dimgray;
+    background-image: url("../mike-petrucci-131817.jpg");
+}
+
+img {
+}
+
+button {
+
+}
+
+.home {
+    background: white;
+    width: 250px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 5px double black;
+    border-radius: 20%;
+}
