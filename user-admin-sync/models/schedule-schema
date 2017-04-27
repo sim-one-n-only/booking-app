@@ -6,7 +6,12 @@ var scheduleSchema = new Schema ({
     serviceRequested: String,
     location: String,
     date: {type: Date},
-    time: {type: Time}
+    time: Number,
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required: true
+    }
 })
 
 var Schedule = mongoose.model("Schedule", scheduleSchema);

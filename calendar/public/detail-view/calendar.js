@@ -37,8 +37,8 @@ app.controller("calendarCntrl", ["$scope", "scheduleService", "$filter", functio
 
 
 
-    $scope.dayClick = function () {
-        $scope.selectedDate = true;
+    $scope.dayClick = function (date) {
+        $scope.selectedDate = date
 
 }
 
